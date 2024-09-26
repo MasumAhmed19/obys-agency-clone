@@ -33,8 +33,23 @@ tl.from(".line1-para1, .line h2", {
 
 })
 
+tl.to(".line h2", {
+    animationName: "anime",
+    opacity:1,
+})
+
 tl.to("#loader", {
     opacity:0,
-    duration:0.4,
-    delay:1.5
+    duration:0.6,
+    delay:1.6
+})
+
+tl.from("#page1", {
+    y:1600,
+    opacity:0,
+    ease:Power4
+})
+
+tl.to("#loader", {
+    display:"none",
 })
